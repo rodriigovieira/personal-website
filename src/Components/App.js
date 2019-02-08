@@ -26,9 +26,9 @@ export default class App extends Component {
           <h1>Rodrigo Vieira</h1>
 
           <div id="navbar">
-            <NavLink to="/" exact={true}>Home</NavLink>
-            <NavLink to="/about">{aboutText}</NavLink>
-            <NavLink to="/contact">{contactText}</NavLink>
+            <NavLink activeClassName="active-nav-one" to="/" exact>Home</NavLink>
+            <NavLink activeClassName="active-nav-two" to="/about">{aboutText}</NavLink>
+            <NavLink activeClassName="active-nav-three" to="/contact">{contactText}</NavLink>
           </div>
 
           <div id="buttons">

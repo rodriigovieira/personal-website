@@ -6,7 +6,7 @@ const englishText = "You can contact me at the e-mail rodriigovieira@gmail.com."
 const Contact = (props) => {
   return (
     <div>
-      <p>{props.lang === 'pt' ? portugueseText : englishText}</p>
+      <p>{props.lang.indexOf('pt') > 0 ? portugueseText : englishText}</p>
     </div>
   )
 }

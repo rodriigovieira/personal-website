@@ -1,6 +1,8 @@
 html {
   margin: 0;
   padding: 0;
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #buttons {
@@ -10,6 +12,62 @@ html {
   }
 }
 
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  margin: auto 20%;
+}
+
 #navbar * {
+  width: 10%;
+  text-align: center;
   padding: 1%;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+  transition: 0.6s;
+
+  &:nth-child(1) {
+    background-color: lightgreen;
+    &:active {
+      background-color: darken(lightgreen, 20%);
+    }
+  }
+
+  &:nth-child(2) {
+    background-color: darken(lightcoral, 10%);
+    &:active {
+      background-color: darken(lightcoral, 30%);
+    }
+  }
+
+  &:nth-child(3) {
+    background-color: lightskyblue;
+    &:active {
+      background-color: darken(lightskyblue, 20%);
+    }
+  }
+
+  &:hover {
+    transition: 0.6s;
+    box-shadow: 0 0 2px black;
+  }
+}
+
+.active-nav-one {
+  box-sizing: content-box;
+  border-bottom: 3px solid yellowgreen;
+  transition: 0.2s;
+}
+
+.active-nav-two {
+  box-sizing: content-box;
+  border-bottom: 3px solid darken(coral, 30%);
+  transition: 0.2s;
+}
+
+.active-nav-three {
+  box-sizing: content-box;
+  border-bottom: 3px solid darken(lightskyblue, 30%);
+  transition: 0.2s;
 }

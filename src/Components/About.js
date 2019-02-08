@@ -6,7 +6,7 @@ const englishText = "My name is Rodrigo Vieira, and I'm a Fullstack Javascript D
 const About = (props) => {
   return (
     <div>
-      <p>{props.lang === 'pt' ? portugueseText : englishText}</p>
+      <p>{props.lang.indexOf('pt') > 0 ? portugueseText : englishText}</p>
 
       <a href="https://github.com/rodriigovieira/resume/blob/master/README-pt.md">Resumé em Português</a>
       <hr/>
