@@ -15,17 +15,24 @@ export default class App extends Component {
   }
 
   render() {
+    const aboutText = this.state.lang === 'pt' ? 'Sobre' : 'About';
+    const contactText = this.state.lang === 'pt' ? 'Contato' : 'Contact';
+
     return (
       <Router>
         <header>
           <h1>Rodrigo Vieira</h1>
 
-          <NavLink to="/" exact={true}>Home</NavLink>
-          <NavLink to="/about">About</NavLink>
-          <NavLink to="/contact">Contact</NavLink>
+          <div id="navbar">
+            <NavLink to="/" exact={true}>{Home}</NavLink>
+            <NavLink to="/about">{aboutText}</NavLink>
+            <NavLink to="/contact">{contactText}</NavLink>
+          </div>
 
-          <button onClick={() => this.setState({ lang: 'pt' })}>Português</button> -
-          <button onClick={() => this.setState({ lang: 'en' })}>English</button>
+          <div id="buttons">
+            <button onClick={() => this.setState({ lang: 'pt' })}>Português</button> -
+            <button onClick={() => this.setState({ lang: 'en' })}>English</button>
+          </div>
 
           <Switch>
             <Route
