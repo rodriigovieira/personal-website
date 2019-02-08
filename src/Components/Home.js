@@ -21,7 +21,7 @@ export default class Home extends Component {
     return (
       <div>
         <ul>
-          <li><a href="https://clone.rodrigovieira.work">Twitter Clone</a> - Fullstack application made with NodeJS, React and React Native..</li>
+          <li><a href="https://clone.rodrigovieira.work">Twitter Clone</a> - Fullstack application made with NodeJS, React and React Native.</li>
           <li><a href="https://movies.rodrigovieira.work">Movies Searcher</a> - Movies searching application made with React by fetching data from TMDB's API.</li>
           <li><a href="https://colorpicking.rodrigovieira.work">ColorPicking Game</a> - Color guessing game, where you have to guess the color by it's RGB code.</li>
           <li><a href="https://indecision.rodrigovieira.work">Indecision App</a> - Application that selects a random option within several different choices.</li>
@@ -37,7 +37,7 @@ export default class Home extends Component {
     return (
       <div>
       {console.log(this.props)}
-        {this.props.lang.indexOf('pt') > 0 ? this.renderPortuguese() : this.renderEnglish()}
+        {this.props.lang.indexOf('pt') >= 0 ? this.renderPortuguese() : this.renderEnglish()}
       </div>
     )
   }

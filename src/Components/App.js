@@ -17,8 +17,8 @@ export default class App extends Component {
   }
 
   render() {
-    const aboutText = this.state.lang === 'pt' ? 'Sobre' : 'About';
-    const contactText = this.state.lang === 'pt' ? 'Contato' : 'Contact';
+    const aboutText = this.state.lang.indexOf('pt') >= 0 ? 'Sobre' : 'About';
+    const contactText = this.state.lang.indexOf('pt') >= 0 ? 'Contato' : 'Contact';
 
     return (
       <Router>
