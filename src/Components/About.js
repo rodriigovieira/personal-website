@@ -10,7 +10,7 @@ const About = (props) => {
 
       <a href="https://github.com/rodriigovieira/resume/blob/master/README-pt.md">Resumé em Português</a>
       <hr/>
-      <a href="https://github.com/rodriigovieira/resume">Resumé in English</a>
+      <a href="https://github.com/rodriigovieira/resume/blob/master/README.md">Resumé in English</a>
 
     </div>
   )

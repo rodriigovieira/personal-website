@@ -9,7 +9,7 @@ import '../styles/index.scss';
 
 export default class App extends Component {
   state = {
-    lang: 'en',
+    lang: 'pt',
   }
 
   componentDidMount() {
